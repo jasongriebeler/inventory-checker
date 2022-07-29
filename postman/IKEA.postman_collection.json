@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "8fc95a44-647d-4e7c-bd2e-012542d5148e",
+		"name": "IKEA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "15304854"
+	},
+	"item": [
+		{
+			"name": "Product Details",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json;version=2",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Client-ID",
+						"value": "0b0cb44f-194c-42eb-a996-4cc165bd902a",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.ikea.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "authority",
+						"value": "api.ingka.ikea.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.ikea.com/",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.ingka.ikea.com/salesitem/communications/ru/us?itemNos=30265386&expand=childItems",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ingka",
+						"ikea",
+						"com"
+					],
+					"path": [
+						"salesitem",
+						"communications",
+						"ru",
+						"us"
+					],
+					"query": [
+						{
+							"key": "itemNos",
+							"value": "30265386"
+						},
+						{
+							"key": "expand",
+							"value": "childItems"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Availability",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json;version=2",
+						"type": "text"
+					},
+					{
+						"key": "Accept-Language",
+						"value": "en-US,en;q=0.5",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept-Encoding",
+						"value": "gzip, deflate, br",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "X-Client-ID",
+						"value": "b6c117e5-ae61-4ef5-b4cc-e0b1e37f0631",
+						"type": "text"
+					},
+					{
+						"key": "Origin",
+						"value": "https://www.ikea.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Dest",
+						"value": "empty",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Mode",
+						"value": "cors",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Sec-Fetch-Site",
+						"value": "same-site",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "authority",
+						"value": "api.ingka.ikea.com",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Referer",
+						"value": "https://www.ikea.com/",
+						"type": "text",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://api.ingka.ikea.com/cia/availabilities/ru/us?itemNos=50265470&expand=StoresList,Restocks,SalesLocations",
+					"protocol": "https",
+					"host": [
+						"api",
+						"ingka",
+						"ikea",
+						"com"
+					],
+					"path": [
+						"cia",
+						"availabilities",
+						"ru",
+						"us"
+					],
+					"query": [
+						{
+							"key": "itemNos",
+							"value": "50265470"
+						},
+						{
+							"key": "expand",
+							"value": "StoresList,Restocks,SalesLocations"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
